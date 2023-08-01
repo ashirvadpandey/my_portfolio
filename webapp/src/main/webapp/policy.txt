@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1675272337774",
+    "Statement": [
+        {
+            "Sid": "Stmt1675272337070",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::cloudwell.online/*"
+        }
+    ]
+}

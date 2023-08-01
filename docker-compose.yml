@@ -1,0 +1,11 @@
+version: '3'
+services:
+  tomcat:
+    build:
+       context: .
+       dockerfile: Dockerfile
+    image: tomcat-img
+    container_name: tomcat-con
+    restart: always
+    ports:
+      - '8080:8080'
